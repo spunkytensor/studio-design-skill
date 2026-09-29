@@ -3,7 +3,7 @@
 - Maintainer: Spunky Tensor (`@spunkytensor`).
 - Supported line: current `main`; no published releases or tags at review time.
 - Reviewed on: 2026-09-29.
-- Shared baseline: [69b5f260fb4358acb0e2f7b2a96254ad9cc2322c](https://github.com/spunkytensor/.github/tree/69b5f260fb4358acb0e2f7b2a96254ad9cc2322c), including README, baseline, onboarding and Trivy workflow.
+- Shared baseline: [ed53814ed23f76c11fa4a91f57f99de903c18bfc](https://github.com/spunkytensor/.github/tree/ed53814ed23f76c11fa4a91f57f99de903c18bfc), including README, baseline, onboarding and Trivy workflow.
 - Profile: **content-only**, with standard-library Python validation tooling.
 
 ## Distribution and inventory
@@ -42,7 +42,8 @@ scanner existed to remove. CodeQL is not configured for this documentation produ
 the small standard-library validator is tested, not CodeQL-analyzed.
 
 If dependencies or executable artifacts are introduced, adopt
-`spunkytensor/.github/.github/workflows/trivy.yml@69b5f260fb4358acb0e2f7b2a96254ad9cc2322c`
+`spunkytensor/.github/.github/workflows/trivy.yml@ed53814ed23f76c11fa4a91f57f99de903c18bfc`
+with `baseline-sha` set to that same full SHA,
 with nightly `59 9 * * *`, PR and default-branch events. Reconcile actual
 distributed inventories, test vulnerable and scanner-failure cases, retain High
 and Critical gates including unfixed findings, and publish SPDX/CycloneDX evidence
@@ -55,7 +56,7 @@ This PR does not change GitHub settings and is **not full baseline compliance**.
 
 - Private reporting was observed disabled. Enable it and confirm a working private
   route before changing the security policy to advertise one.
-- Verify dependency graph, Dependabot alerts/security updates, secret scanning,
+- Verify Dependabot alerts/security updates, secret scanning,
   push protection, access review and maintainer 2FA. Security settings were not
   exposed by the available API response; do not infer that they are enabled.
 - Branch-protection inspection returned HTTP 403. Verify review requirements,
