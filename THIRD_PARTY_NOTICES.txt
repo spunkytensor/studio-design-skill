@@ -1,0 +1,32 @@
+Studio design skill — attribution and provenance review
+
+The project declares the Unlicense in UNLICENSE and in the installed skill's
+UNLICENSE. Both existing texts are preserved unchanged.
+
+The reviewed source snapshot is commit
+17da9f740217ca575241e3eef85eda26f1e68771 of
+https://github.com/spunkytensor/studio-design-skill.
+Its four tracked files are README.md, UNLICENSE, and SKILL.md and UNLICENSE under
+skills/designing-translucent-interfaces/. No third-party binaries, fonts, images,
+models, vendored libraries or package dependencies were found in that snapshot.
+The CSS examples and design guidance are part of the skill text, not bundled
+framework code. Font and icon descriptions do not distribute font or icon files.
+
+Git records an initial contribution by Matt Curfman, and the documentation names
+Spunky Tensor. This is repository provenance, not independent proof of authorship
+or legal clearance. No upstream copyright/NOTICE files were present beyond the
+Unlicense texts. Maintainer confirmation of original authorship or any external
+source material remains outstanding; do not interpret this review as a warranty
+that no third-party rights apply.
+
+The README links to agentskills.io and skills.sh and shows an npx skills command.
+Those external services and the installer are obtained separately by the user;
+they are not shipped in this repository or covered by its license or checks.
+Host applications, fonts, icons and other assets chosen when implementing the
+guide need their own dependency and attribution review.
+
+content-inventory.json records the distributed source files and their hashes.
+Before adding copied text or assets, record source/version, applicable license,
+copyright and NOTICE requirements, and include the required texts with every
+distribution (including inside the skill directory when installed separately).
+Unknown or conflicting rights block redistribution of new material until reviewed.
