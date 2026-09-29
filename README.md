@@ -62,3 +62,12 @@ This layout follows the [skill specification](https://agentskills.io/specificati
 This skill and its documentation are released into the public domain under the [Unlicense](UNLICENSE). Anyone may use, copy, modify, publish, sell, or distribute them for any purpose, commercial or non-commercial.
 
 Provided **"AS IS" by Spunky Tensor, without warranty of any kind**, with the full warranty disclaimer and limitation of liability in the license text.
+
+## Security and contributions
+
+See the [security policy and supported line](SECURITY.md),
+[contribution guide](CONTRIBUTING.md), [attribution review](THIRD_PARTY_NOTICES.txt),
+and [baseline coverage and remaining gaps](docs/baseline-adoption.md).
+This is a content-only project: CI validates its content inventory and distribution
+contracts, not package CVEs. There are no dependency SBOM downloads or packaged
+releases; [the content inventory](content-inventory.json) is not a package SBOM.

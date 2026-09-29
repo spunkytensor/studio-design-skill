@@ -1,0 +1,28 @@
+name: Spunky Tensor security
+
+# Content-only profile: dependency/CVE scanning is not applicable.
+on:
+  pull_request:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '59 9 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  content:
+    name: Content-only checks
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Validate content inventory and distribution contracts
+        run: python3 scripts/check_content.py
+      - name: Exercise rejected content and provenance cases
+        run: python3 -m unittest discover -s tests -v

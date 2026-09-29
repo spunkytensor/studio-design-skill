@@ -1,0 +1,25 @@
+{
+  "profile": "content-only",
+  "files": {
+    "README.md": {
+      "sha256": "02424cb129ebb4b8187d104b3ca4bfd17c56160fe6e68bcba10e5ffbe99761bf",
+      "license": "Unlicense",
+      "origin": "Project documentation from upstream commit 17da9f740217ca575241e3eef85eda26f1e68771, plus baseline-adoption links in this PR; authorship confirmation pending (THIRD_PARTY_NOTICES.txt)."
+    },
+    "UNLICENSE": {
+      "sha256": "b5065838cbac452dfc855ba6e6e031481ad2c68406f70d21ead9321374653e6c",
+      "license": "Unlicense",
+      "origin": "Existing project dedication at upstream commit 17da9f740217ca575241e3eef85eda26f1e68771; standard text references https://unlicense.org/."
+    },
+    "skills/designing-translucent-interfaces/SKILL.md": {
+      "sha256": "9fceda712712941b7536d082f97a04cfa186f21fdb8be7a11b676f39e6552412",
+      "license": "Unlicense",
+      "origin": "Unchanged project design guide from upstream commit 17da9f740217ca575241e3eef85eda26f1e68771; independent authorship confirmation pending (THIRD_PARTY_NOTICES.txt)."
+    },
+    "skills/designing-translucent-interfaces/UNLICENSE": {
+      "sha256": "b5065838cbac452dfc855ba6e6e031481ad2c68406f70d21ead9321374653e6c",
+      "license": "Unlicense",
+      "origin": "Identical bundled copy of root UNLICENSE from upstream commit 17da9f740217ca575241e3eef85eda26f1e68771."
+    }
+  }
+}
